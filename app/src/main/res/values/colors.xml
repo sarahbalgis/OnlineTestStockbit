@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="white_grey">#eaeaea</string>
+    <color name="ic_stockbit_background">#2D2D2D</color>
+    <color name="red">#f16665</color>
+    <color name="grey">#BFBFBF</color>
+    <color name="light_grey">#E1DFDF</color>
+    <color name="green">#28976D</color>
+    <color name="dark_green">#017046</color>
+</resources>

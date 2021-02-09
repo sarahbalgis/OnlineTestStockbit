@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/rlayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:paddingStart="@dimen/dimen12"
+                android:paddingEnd="@dimen/dimen12"
+                app:menu="@menu/menu_login_contact_us"
+                app:navigationIcon="@drawable/ic_arrow_back">
+
+                <TextView
+                    android:id="@+id/titleToolbar"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:text="@string/txt_title_masuk"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font16" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen16"
+                android:layout_marginTop="@dimen/dimen22"
+                android:layout_marginEnd="@dimen/dimen16"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLoginGoogle"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:letterSpacing=".01"
+                    android:paddingTop="@dimen/dimen2"
+                    android:paddingBottom="@dimen/dimen2"
+                    android:text="@string/txt_login_google"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_google"
+                    app:iconTint="@null"
+                    tools:targetApi="lollipop" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLoginFacebook"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:letterSpacing=".01"
+                    android:paddingTop="@dimen/dimen2"
+                    android:paddingBottom="@dimen/dimen2"
+                    android:text="@string/txt_login_facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_facebook"
+                    app:iconTint="@null"
+                    tools:targetApi="lollipop" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutOr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen22">
+
+                    <TextView
+                        android:id="@+id/tvText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:text="@string/txt_or"
+                        android:textColor="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/tvText"
+                        android:background="@color/light_grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/tvText"
+                        android:background="@color/light_grey" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayoutUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxStrokeColor="@color/dark_green"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/edtTextUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova_regular"
+                            android:hint="@string/txt_username"
+                            android:importantForAutofill="no"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/font14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayoutPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen2"
+                        android:importantForAutofill="no"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxStrokeColor="@color/dark_green"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/dark_green">
+
+                        <EditText
+                            android:id="@+id/edtTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova_regular"
+                            android:hint="@string/txt_password"
+                            android:importantForAutofill="no"
+                            android:inputType="textPassword"
+                            android:textSize="@dimen/font14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/btnTextForgot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/dimen20"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:text="@string/txt_forget_password"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/font12" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:letterSpacing=".01"
+                    android:padding="@dimen/dimen14"
+                    android:text="@string/txt_login"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:targetApi="lollipop" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnFingerPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen14"
+                    android:background="@drawable/background_with_border"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:letterSpacing=".01"
+                    android:padding="15dp"
+                    android:text="@string/txt_fingerprint"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/font16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:targetApi="lollipop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen20"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="40dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:text="@string/txt_no_account"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font12"
+                        android:textStyle="bold"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:id="@+id/btnRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen6"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:text="@string/txt_register_now"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/font12"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

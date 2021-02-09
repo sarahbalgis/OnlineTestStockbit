@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen14">
+
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_marginEnd="@dimen/dimen16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font16"
+        android:fontFamily="@font/proxima_nova_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="AALI" />
+
+    <TextView
+        android:id="@+id/fullname_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_marginTop="@dimen/dimen4"
+        android:layout_marginEnd="@dimen/dimen16"
+        android:textSize="@dimen/font14"
+        android:fontFamily="@font/proxima_nova_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_view"
+        tools:text="Astra Agro Astari Tbk" />
+
+    <TextView
+        android:id="@+id/price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_marginEnd="@dimen/dimen16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font16"
+        android:fontFamily="@font/proxima_nova_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="9,050" />
+
+    <TextView
+        android:id="@+id/change_per_hour_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen6"
+        android:layout_marginTop="@dimen/dimen4"
+        android:layout_marginEnd="@dimen/dimen6"
+        android:fontFamily="@font/proxima_nova_regular"
+        app:layout_constraintEnd_toStartOf="@id/change_per_hour_in_percent_view"
+        app:layout_constraintTop_toBottomOf="@id/price_view"
+        tools:text="+200"
+        tools:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/change_per_hour_in_percent_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_marginTop="@dimen/dimen4"
+        android:layout_marginEnd="@dimen/dimen16"
+        android:fontFamily="@font/proxima_nova_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_view"
+        tools:text="(+0.69%)"
+        tools:textColor="@color/green" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen12"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/change_per_hour_in_percent_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

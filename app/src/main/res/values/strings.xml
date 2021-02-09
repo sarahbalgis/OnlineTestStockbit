@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">OnlineTest Stockbit</string>
+
+    <!--connection-->
+    <string name="no_internet_connection">Tidak ada koneksi internet</string>
+    <string name="failed_request">Gagal mendapatkan data, silahkan coba lagi…</string>
+
+    <string name="title_intro1">Investasi Saham Yang Mudah</string>
+    <string name="desc_intro1">Swipe. Order. Done. Semudah itu. Tanpa harus baca manual.</string>
+
+    <!--login-->
+    <string name="stockbit">Stockbit</string>
+    <string name="txt_title_masuk">Masuk</string>
+    <string name="txt_login_google">Masuk dengan Google</string>
+    <string name="txt_login_facebook">Masuk dengan Facebook</string>
+    <string name="txt_or">Atau</string>
+    <string name="txt_username">Username or Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_forget_password">Lupa Password</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_fingerprint">Masuk dengan Fingerprint</string>
+    <string name="txt_no_account">Belum punya akun?</string>
+    <string name="txt_register_now">Daftar sekarang</string>
+    <string name="txt_splash">Splashscreen</string>
+
+    <!--main-->
+    <string name="watchlist">Watchlist</string>
+    <string name="stream">Stream</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="chat">Chat</string>
+    <string name="search">Search</string>
+    <string name="keluar">Keluar</string>
+    <string name="view_profile">View Profile</string>
+    <string name="main">Main</string>
+    <string name="user">Pengguna Stockbit App</string>
+
+</resources>
